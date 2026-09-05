@@ -1,6 +1,6 @@
-🤖 Nova AI – Study Assistant
+🤖 StudyNest AI – Study Assistant
 
-Nova AI is a simple and interactive chatbot web application developed to help students get quick information about programming and computer science topics.
+StudyNest AI is a simple and interactive chatbot web application developed to help students get quick information about programming and computer science topics.
 
 ✨ Features
 
@@ -24,7 +24,7 @@ Nova AI is a simple and interactive chatbot web application developed to help st
 📂 Project Structure
 
 ```text
-AI-Chatbot-Web-Application/
+My-AI-Chatbot/
 │
 ├── app.py
 ├── requirements.txt
