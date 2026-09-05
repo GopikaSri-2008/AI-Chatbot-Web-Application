@@ -1,18 +1,19 @@
-# Nova AI - Study Assistant
+🤖 Nova AI – Study Assistant
 
-A Flask-based AI chatbot web application designed for study-related questions.
+Nova AI is a simple and interactive chatbot web application developed to help students get quick information about programming and computer science topics.
 
-## Features
+✨ Features
 
-- Modern responsive chatbot UI
-- Python Flask backend
-- Multiple topic replies in one message
-- Typing animation
-- Dark mode
-- Quick study topic buttons
-- Mobile responsive design
+- 💬 Interactive chatbot interface
+- 🐍 Python, Java, HTML, CSS and Flask topic responses
+- 🔄 Multiple-topic responses in a single message
+- ⌨️ Typing/loading animation
+- 🌙 Light and Dark mode
+- 📱 Responsive design for mobile and desktop
+- ⚡ Quick topic suggestions
+- 🎨 Clean and modern user interface
 
-## Technologies Used
+🛠️ Technologies Used
 
 - Python
 - Flask
@@ -20,8 +21,18 @@ A Flask-based AI chatbot web application designed for study-related questions.
 - CSS3
 - JavaScript
 
-## Run Locally
+📂 Project Structure
 
-```bash
-pip install -r requirements.txt
-python app.py
+```text
+AI-Chatbot-Web-Application/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── templates/
+│   └── index.html
+│
+└── static/
+    ├── style.css
+    └── script.js
