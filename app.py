@@ -8,7 +8,7 @@ def get_response(message):
     replies = []
 
     if any(word in msg for word in ["hi", "hello", "hey", "hai"]):
-        replies.append("Hello! 👋 I'm Nova AI. How can I help you today?")
+        replies.append("Hello! 👋 I'm StudyNest AI. How can I help you today?")
 
     if "python" in msg:
         replies.append("🐍 Python is a simple and powerful programming language used in web development, AI, data science and automation.")
