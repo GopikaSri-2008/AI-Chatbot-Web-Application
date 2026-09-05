@@ -37,7 +37,7 @@ function addMessage(text, sender) {
     head.className = "message-head";
 
     head.innerHTML =
-        `<strong>${sender === "bot" ? "Nova AI" : "You"}</strong>
+        `<strong>${sender === "bot" ? "StudyNest AI" : "You"}</strong>
          <span class="time">${getTime()}</span>`;
 
 
@@ -78,7 +78,7 @@ function showTyping() {
 
         <div class="message-content">
             <div class="typing">
-                Nova AI is typing...
+                StudyNest AI is typing...
             </div>
         </div>
     `;
@@ -181,7 +181,7 @@ function clearChat() {
     welcome.style.display = "block";
 
     addMessage(
-        "Hello! 👋 I'm Nova AI. Ask me anything about your study topics.",
+        "Hello! 👋 I'm StudyNest AI. Ask me anything about your study topics.",
         "bot"
     );
 }
@@ -192,7 +192,7 @@ function toggleTheme() {
     document.body.classList.toggle("dark");
 
     localStorage.setItem(
-        "novaTheme",
+        "studynestTheme",
         document.body.classList.contains("dark")
             ? "dark"
             : "light"
@@ -208,7 +208,7 @@ function toggleSidebar() {
 }
 
 
-if (localStorage.getItem("novaTheme") === "dark") {
+if (localStorage.getItem("studynestTheme") === "dark") {
 
     document.body.classList.add("dark");
 
