@@ -1,98 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>StudyNest AI | Study Assistant</title>
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='style.css') }}">
+
 </head>
+
 
 <body>
 
 <div class="app">
 
+
+    <!-- SIDEBAR -->
+
     <aside class="sidebar" id="sidebar">
 
-       <div class="brand">
+        <div class="brand">
 
-            <div class="brand-icon">✦</div>
-
-            <div>
-                <h2>StudyNest AI</h2>
-                <p>Study Assistant</p>
+            <div class="brand-icon">
+                ✦
             </div>
-            <button class="sidebar-close" onclick="toggleSidebar()">✕</button>
-    </div>
 
-        <button class="new-chat" onclick="clearChat()">
+            <div class="brand-text">
+
+                <h2>StudyNest AI</h2>
+
+                <p>Study Assistant</p>
+
+            </div>
+
+            <button
+                class="sidebar-close"
+                onclick="toggleSidebar()">
+
+                ✕
+
+            </button>
+
+        </div>
+
+
+        <button
+            class="new-chat"
+            onclick="clearChat()">
+
             ＋ New Chat
+
         </button>
+
 
         <div class="side-section">
 
-            <p class="section-title">Study Topics</p>
+            <p class="section-title">
+                STUDY TOPICS
+            </p>
 
-            <button class="topic"
-                    onclick="quickMessage('Tell me about Python')">
-                🐍 Python
+
+            <button
+                class="topic"
+                onclick="quickMessage('Tell me about Python')">
+
+                <span class="topic-icon">🐍</span>
+
+                <span>Python</span>
+
             </button>
 
-            <button class="topic"
-                    onclick="quickMessage('Tell me about Java')">
-                ☕ Java
+
+            <button
+                class="topic"
+                onclick="quickMessage('Tell me about Java')">
+
+                <span class="topic-icon">☕</span>
+
+                <span>Java</span>
+
             </button>
 
-            <button class="topic"
-                    onclick="quickMessage('Tell me about HTML')">
-                🌐 HTML
+
+            <button
+                class="topic"
+                onclick="quickMessage('Tell me about HTML')">
+
+                <span class="topic-icon">🌐</span>
+
+                <span>HTML</span>
+
             </button>
 
-            <button class="topic"
-                    onclick="quickMessage('Tell me about CSS')">
-                🎨 CSS
+
+            <button
+                class="topic"
+                onclick="quickMessage('Tell me about CSS')">
+
+                <span class="topic-icon">🎨</span>
+
+                <span>CSS</span>
+
             </button>
 
-            <button class="topic"
-                    onclick="quickMessage('Tell me about Flask')">
-                🚀 Flask
+
+            <button
+                class="topic"
+                onclick="quickMessage('Tell me about JavaScript')">
+
+                <span class="topic-icon">⚡</span>
+
+                <span>JavaScript</span>
+
             </button>
+
+
+            <button
+                class="topic"
+                onclick="quickMessage('Tell me about Flask')">
+
+                <span class="topic-icon">🚀</span>
+
+                <span>Flask</span>
+
+            </button>
+
+
+            <button
+                class="topic"
+                onclick="quickMessage('Tell me about DBMS')">
+
+                <span class="topic-icon">🗄️</span>
+
+                <span>DBMS</span>
+
+            </button>
+
 
         </div>
+
 
         <div class="online">
+
             <span></span>
+
             StudyNest AI is online
+
         </div>
+
 
     </aside>
 
 
+
+    <!-- MAIN -->
+
     <main class="main">
+
+
+        <!-- TOPBAR -->
 
         <header class="topbar">
 
-            <button class="icon-btn menu-btn"
-                    onclick="toggleSidebar()">
+            <button
+                class="icon-btn menu-btn"
+                onclick="toggleSidebar()">
+
                 ☰
+
             </button>
 
-            <div>
+
+            <div class="top-title">
+
                 <h3>StudyNest AI</h3>
-                <small>Study Assistant</small>
+
+                <small>
+                    Your Smart Study Assistant
+                </small>
+
             </div>
+
 
             <div class="top-actions">
 
-                <button class="icon-btn"
-                        onclick="toggleTheme()">
+                <button
+                    class="icon-btn"
+                    onclick="toggleTheme()"
+                    title="Toggle theme">
+
                     ☾
+
                 </button>
 
-                <button class="icon-btn"
-                        onclick="clearChat()">
+
+                <button
+                    class="icon-btn"
+                    onclick="clearChat()"
+                    title="New chat">
+
                     ＋
+
                 </button>
 
             </div>
@@ -100,46 +214,140 @@
         </header>
 
 
-        <section class="chat-area" id="chatBox">
 
-            <div class="welcome" id="welcome">
+        <!-- CHAT AREA -->
+
+        <section
+            class="chat-area"
+            id="chatBox">
+
+
+            <!-- WELCOME -->
+
+            <div
+                class="welcome"
+                id="welcome">
+
 
                 <div class="welcome-icon">
                     ✦
                 </div>
 
+
                 <h1>
                     How can I help you today?
                 </h1>
 
-                <p>
-                    Ask me about programming, web development
-                    and computer science topics.
+
+                <p class="welcome-subtitle">
+
+                    Your smart study assistant for
+                    learning, practicing and understanding.
+
                 </p>
 
 
-                <div class="suggestions">
 
-                    <button onclick="quickMessage('What is Python?')">
-                        🐍 What is Python?
-                    </button>
+                <!-- HELP SECTION -->
 
-                    <button onclick="quickMessage('What is Java?')">
-                        ☕ What is Java?
-                    </button>
+                <div class="help-section">
 
-                    <button onclick="quickMessage('What is HTML and CSS?')">
-                        🌐 What is HTML and CSS?
-                    </button>
+                    <h2>
+                        What I can help you with
+                    </h2>
 
-                    <button onclick="quickMessage('What is OOP?')">
-                        📚 What is OOP?
-                    </button>
+
+                    <div class="help-grid">
+
+                        <div class="help-item">
+
+                            <span>📖</span>
+
+                            <div>
+
+                                <strong>Concepts</strong>
+
+                                <p>
+                                    Understand difficult topics
+                                    in simple words.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="help-item">
+
+                            <span>💻</span>
+
+                            <div>
+
+                                <strong>Code Examples</strong>
+
+                                <p>
+                                    Learn programming with
+                                    simple examples.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="help-item">
+
+                            <span>📝</span>
+
+                            <div>
+
+                                <strong>Exam Preparation</strong>
+
+                                <p>
+                                    Get clear and
+                                    student-friendly answers.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
+
+
+                <!-- STUDY TIP -->
+
+                <div class="study-tip">
+
+                    <div class="tip-icon">
+                        💡
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Study Tip
+                        </strong>
+
+                        <p>
+                            Break difficult concepts into
+                            smaller parts and learn them
+                            step by step.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
             </div>
 
+
+
+            <!-- INITIAL MESSAGE -->
 
             <div class="message bot">
 
@@ -147,26 +355,44 @@
                     ✦
                 </div>
 
+
                 <div class="message-content">
 
                     <div class="message-head">
-                        <strong>StudyNest AI</strong>
-                        <span class="time">Now</span>
+
+                        <strong>
+                            StudyNest AI
+                        </strong>
+
+                        <span class="time">
+                            Now
+                        </span>
+
                     </div>
 
+
                     <div class="bubble">
+
                         Hello! 👋 I'm StudyNest AI.
                         Ask me anything about your study topics.
+
                     </div>
 
                 </div>
 
             </div>
 
+
         </section>
 
 
-        <form class="input-area" id="chatForm">
+
+        <!-- INPUT -->
+
+        <form
+            class="input-area"
+            id="chatForm">
+
 
             <input
                 id="messageInput"
@@ -174,18 +400,30 @@
                 placeholder="Ask StudyNest AI anything..."
                 autocomplete="off">
 
-            <button type="submit">
+
+            <button
+                type="submit"
+                title="Send message">
+
                 ➤
+
             </button>
 
+
         </form>
+
 
     </main>
 
 </div>
 
 
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+<script
+    src="{{ url_for('static', filename='script.js') }}">
+</script>
+
 
 </body>
-          </html>
+
+</html>
