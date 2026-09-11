@@ -1,8 +1,8 @@
-🤖 StudyNest AI – Study Assistant
+# 🤖 StudyNest AI – Study Assistant
 
 StudyNest AI is a simple and interactive chatbot web application developed to help students get quick information about programming and computer science topics.
 
-✨ Features
+## ✨ Features
 
 - 💬 Interactive chatbot interface
 - 🐍 Python, Java, HTML, CSS and Flask topic responses
@@ -13,7 +13,7 @@ StudyNest AI is a simple and interactive chatbot web application developed to he
 - ⚡ Quick topic suggestions
 - 🎨 Clean and modern user interface
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - Python
 - Flask
@@ -21,9 +21,9 @@ StudyNest AI is a simple and interactive chatbot web application developed to he
 - CSS3
 - JavaScript
 
-📂 Project Structure
+## 📂 Project Structure
 
-
+```text
 AI-Chatbot-Web-Application/
 │
 ├── app.py
