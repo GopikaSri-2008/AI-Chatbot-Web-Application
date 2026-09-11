@@ -23,8 +23,8 @@ StudyNest AI is a simple and interactive chatbot web application developed to he
 
 📂 Project Structure
 
-```text
-My-AI-Chatbot/
+
+AI-Chatbot-Web-Application/
 │
 ├── app.py
 ├── requirements.txt
